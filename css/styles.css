@@ -1,0 +1,33 @@
+body {
+  background-color: #BEA0B8;
+}
+
+.img-responsive {
+  margin: 15px auto 15px;
+}
+
+.tabs {
+  list-style-type: none;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.tablinks {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  vertical-align: bottom;
+  background: rgb(61, 35, 81);
+  border: 5px solid rgb(29, 21, 40);
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.channels{
+  background-color: white;
+  padding: 40px 40px;
+  width: 91%;
+  margin: auto;
+}
