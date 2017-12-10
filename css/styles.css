@@ -37,7 +37,16 @@ body {
   margin-top: -10px;
 }
 
+.streamers > li{
+  list-style-type: none;
+}
 
+#streamer-logo{
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+
+}
 
 
 
