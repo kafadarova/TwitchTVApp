@@ -31,9 +31,9 @@ $(document).ready(function() {
 
           success: function(json) {
             if (json.stream === null) {
-              $('#' + streamer).append('<p><i class="fa fa-stop-circle"></i> Offline</p>').addClass('offline');
+              $('#' + streamer).append('<p class="status"><i class="fa fa-stop-circle"></i> Offline</p><hr>').addClass('offline');
             } else {
-              $('#' + streamer).append('<p><i class="fa fa-play"></i> Online<br>Status: ' + json.stream.channel.status + '</p>').addClass('online');
+              $('#' + streamer).append('<p class="status"><i class="fa fa-play"></i> Online<br>Status: ' + json.stream.channel.status + '</p><hr>').addClass('online');
             }
           }
         });

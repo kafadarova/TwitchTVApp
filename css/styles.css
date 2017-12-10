@@ -25,53 +25,42 @@ body {
   font-size: 14px;
 }
 
-.channels{
+.channels {
   background-color: white;
   padding: 40px 40px;
   width: 91%;
   margin: auto;
 }
 
-#search{
+#search {
   width: 100%;
   margin-top: -10px;
 }
 
-.streamers > li{
+.streamers>li {
   list-style-type: none;
+  
 }
 
-#streamer-logo{
+#streamer-logo {
   max-width: 75px;
   max-height: 75px;
   border-radius: 50%;
-
+  display: inline;
+  margin-right: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.status{
+  margin-left: 20px;
+}
 
 footer {
   text-align: center;
-  margin:100px auto;
+  margin: 100px auto;
   width: 50%;
 }
-a:visited
-{
-    text-decoration: none;
-    decoration: none;
+
+a:visited {
+  text-decoration: none;
+  decoration: none;
 }
