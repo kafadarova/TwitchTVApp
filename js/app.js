@@ -19,7 +19,7 @@ $(document).ready(function() {
         // console.log(data);
 
         if (data.status != 404) {
-          $(".streamers").append(`<li id=${streamer}><img class="img-responsive" id="streamer-logo" src=${data.logo}><a href=${data.url} name=${data.display_name.toLowerCase()} target="_blank">${data.display_name}</a></li><br>`);
+          $(".streamers").append(`<li class="str-channel" id=${streamer}><img class="img-responsive" id="streamer-logo" src=${data.logo}><a href=${data.url} name=${data.display_name.toLowerCase()} target="_blank">${data.display_name}</a></li><br>`);
         }
 
         let streamersUrl = `${url}streams/${streamer}?api-version=3&callback=?`;
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   $("#menu-all").click(function() {
     $('li').removeClass('hidden selected');
-        $(this).addClass('selected');
+    $(this).addClass('selected');
   });
 
   $("#menu-online").click(function() {
@@ -59,7 +59,26 @@ $(document).ready(function() {
     $('li').filter('.offline').addClass('hidden');
   });
 
+  $('#search').keyup(function(e) {
+    e.preventDefault();
+    // Declare variables
+    var searchedInput = this.value.toLowerCase();
+    input = document.getElementById('search');
+    ul = document.getElementsByClassName('streamers');
+    li = document.getElementsByClassName('str-channel');
 
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+         a = li[i].getElementsByTagName("a")[0];
+         if (a.innerHTML.toLowerCase().indexOf(searchedInput) > -1) {
+             li[i].style.display = "";
+         } else {
+             li[i].style.display = "none";
+
+         }
+     }
+
+  });
 
 
 
