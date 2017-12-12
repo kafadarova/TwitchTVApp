@@ -1,6 +1,13 @@
 body {
   background-color: #BEA0B8;
 }
+.tablinks:focus{
+  background-color: #fff ;
+  color: rgb(61, 35, 81);
+  border-color: #888888;
+  outline: 0;
+  font-weight: bold;
+}
 
 .img-responsive {
   margin: 15px auto 15px;
@@ -39,7 +46,7 @@ body {
 
 .streamers>li {
   list-style-type: none;
-  
+
 }
 
 #streamer-logo {

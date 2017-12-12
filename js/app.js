@@ -6,6 +6,7 @@ const url = "https://wind-bow.gomix.me/twitch-api/";
 
 
 $(document).ready(function() {
+ $("#menu-all").focus();
   streamers.forEach(function(streamer) {
     let currentUrl = `${url}channels/${streamer}?api-version=3&callback=?`;
 
